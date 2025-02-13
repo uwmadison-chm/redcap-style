@@ -4,10 +4,10 @@
 
 The size and complexity of research projects you can take on depends on a lot of things — one of the most important is how you organize your database. REDCap can be used to run incredibly complex studies; your experience will be so much easier if you use a consistent style throughout. And while many of REDCap's features are documented, there is basically no official guide on how you _should_ set things up.
 
-This guide reflects how we build studies at the [Center for Healthy Minds](https://centerhealthyminds.org). It's primarily for internal CHM researchers, but it's on the web for anyone. You may disagree with some of the choices we've made, but if you take one thing from this guide: **Choose a consistent style and use it as much as you can in your own project.**
+This guide reflects how we build studies at the [Center for Healthy Minds](https://centerhealthyminds.org). It's primarily for internal CHM researchers, but everyone is free to use it. You may disagree with some of the choices we've made (style guides are, after all, opinionated!), but if you take one thing from this guide: **Choose a consistent style and use it as much as you can in your own project.**
 
-The more consistent you are within your project, the less you'll need to refer to your codebooks, look up variable names, and the fewer logic errors you'll make. The more consistent you are, the easier time participants will have in understanding 
+The more consistent you are within your project, the less you'll need to refer to your codebooks, look up variable names, and the fewer logic errors you'll make. The more consistent you are, the easier time participants will have in understanding and following your protocol.
 
-This guide owes a great deal, both in structure and its opinionated nature, to the excellent [Tidyverse style guide](https://style.tidyverse.org).
+This guide owes a great deal, both in structure and its opinionated nature, to the excellent [Tidyverse style guide](https://style.tidyverse.org). Kudos to that team for a great resource.
 
 If you find errors, inconsistencies, or typos, please file a note on our [Issues page](https://github.com/uwmadison-chm/redcap-style/issues). If you have ideas, disagreements, or anything else, use the [Discussions section](https://github.com/uwmadison-chm/redcap-style/discussions).

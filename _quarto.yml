@@ -5,10 +5,10 @@ book:
   title: REDCap Style Guide
   author: The Research Support Core at the Center for Healthy Minds, UW-Madison
 
-  site-url: https://redcap-style.tidyverse.org
+  site-url: https://uwmadison-chm.github.io/redcap-style
   repo-url: https://github.com/uwmadison-chm/redcap-style
   repo-branch: main
-  repo-actions: [edit, issue]
+  repo-actions: [source, issue]
 
   chapters:
   - index.qmd
