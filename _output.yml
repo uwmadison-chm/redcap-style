@@ -1,0 +1,9 @@
+bookdown::bs4_book:
+  repo: https://github.com/uwmadison-chm/redcap-style
+
+bookdown::pdf_book:
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+
+bookdown::epub_book: default
