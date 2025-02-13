@@ -1,12 +1,13 @@
 project:
   type: book
 
+copyright:
+  holder: Board of Regents of the University of Wisconsin System
+  year: 2025
+
 book:
   title: REDCap Style Guide
   author: The Research Support Core at the Center for Healthy Minds, UW-Madison
-  copyright:
-    holder: Board of Regents of the University of Wisconsin System
-    year: 2025
 
   site-url: https://uwmadison-chm.github.io/redcap-style
   repo-url: https://github.com/uwmadison-chm/redcap-style
