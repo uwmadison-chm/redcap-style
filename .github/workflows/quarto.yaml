@@ -1,27 +1,44 @@
+name: Compile and deploy book using Quarto
+
 on:
   push:
-    branches: [main, master]
-  pull_request:
+    branches: [main]
+
   workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 name: quarto.yml
 
 jobs:
   quarto:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
 
       - name: Install Quarto
-        uses: quarto-dev/quarto-actions/install-quarto@v1
+        uses: quarto-dev/quarto-actions/install-quarto@v2
 
       - name: Render book
         run: quarto render

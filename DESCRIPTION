@@ -1,0 +1,16 @@
+Package: redcapstyle
+Title: REDCap style guide
+Version: 0.0.1
+Authors@R: c(
+  person("Nate", "Vack", , "njvack@wisc.edu", c("aut", "cre"))
+  )
+URL: https://github.com/uwmadison-chm/redcap-style
+Depends:
+    R (>= 4.4.0)
+Imports:
+    bookdown,
+    rmarkdown,
+    png,
+    bslib,
+    downlit,
+    xml2
