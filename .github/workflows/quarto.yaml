@@ -36,7 +36,7 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
 
       - name: Install Quarto
-        uses: quarto-dev/quarto-actions/install-quarto@v2
+        uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render book
         run: quarto render
